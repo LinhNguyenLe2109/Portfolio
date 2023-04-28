@@ -58,12 +58,13 @@ const ProfComponent = () => {
         </Texts>
       </Slide>
       <Slide direction="right" triggerOnce="true">
-        <Profile>
+        <div>
           <img
-            src="https://res.cloudinary.com/ghazni/image/upload/v1659082282/Yt-portfolio/Untitled-1_drcspz.png"
+          className={classes['profile-img']}
+            src="/images/intro-img.jpg"
             alt="profile"
           />
-        </Profile>
+        </div>
       </Slide>
     </Container>
   );
@@ -120,27 +121,5 @@ const Social = styled.div`
     @media (max-width: 690px) {
       font-size: 0.7rem;
     }
-  }
-`;
-const Profile = styled.div`
-  img {
-    width: 25rem;
-    filter: drop-shadow(0px 10px 10px #01be9570);
-    transition: transform 400ms ease-in-out;
-    @media (max-width: 790px) {
-      width: 20rem;
-    }
-
-    @media (max-width: 660px) {
-      width: 18rem;
-    }
-
-    @media (max-width: 640px) {
-      width: 100%;
-    }
-  }
-
-  :hover img {
-    transform: translateY(-10px);
   }
 `;
