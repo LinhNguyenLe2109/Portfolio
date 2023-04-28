@@ -17,16 +17,16 @@ const Header = () => {
           <a href="#home">Home</a>
         </span>
         <span>
-          <a href="#service">Services</a>
+          <a href="#service">Experience</a>
         </span>
         <span>
           <a href="#project">Projects</a>
         </span>
         <span>
-          <a href="#client">Testimonials</a>
+          <a href="#client">Skills</a>
         </span>
         <span>
-          <a href="#footer">Portfolio</a>
+          <a href="#footer">Contact me</a>
         </span>
       </Nav>
       <div onClick={() => setBar(!bar)} className="bars">

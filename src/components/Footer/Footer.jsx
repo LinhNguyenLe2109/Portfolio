@@ -4,7 +4,7 @@ import { MdAlternateEmail } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
-import { BsFacebook, BsSlack } from "react-icons/bs";
+import { BsNewspaper } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
 
@@ -18,27 +18,27 @@ const Footer = () => {
   return (
     <Container id="footer">
       <Profile>
-        <Slide direction="left" delay={1}>
-          <h1>Portfolio</h1>
+        <Slide direction="left">
+          <h1>Contact me</h1>
         </Slide>
         <div className="address">
           <Slide direction="left">
             <h1>Address:</h1>
           </Slide>
           <Slide direction="left">
-            <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
+            <p>North York, ON, Canada</p>
           </Slide>
         </div>
         <div className="links">
           <Slide direction="left">
-            <h1>Contact me directly:</h1>
+            <h1>Reach out to me directly:</h1>
           </Slide>
           <div>
             <span>
               <FiPhoneCall />
             </span>
             <Slide direction="left">
-              <a href="tel:+4733378901">+47 333 78 901</a>
+              <a href="tel:+1-647-562-7948">+1 (647) 562-7948</a>
             </Slide>
           </div>
           <div>
@@ -48,7 +48,9 @@ const Footer = () => {
               </span>
             </Slide>
             <Slide>
-              <a href="mailto:miladamiri@gmail.com">miladamiri@gmail.com</a>
+              <a href="mailto:lelinhnguyen2109@gmail.com">
+                lelinhnguyen2109@gmail.com
+              </a>
             </Slide>
           </div>
         </div>
@@ -59,29 +61,22 @@ const Footer = () => {
           <div className="icons">
             <Zoom>
               <span>
-                <a href="/">
+                <a href="https://github.com/LinhNguyenLe2109">
                   <AiFillGithub />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span>
-                <a href="/">
+                <a href="https://www.linkedin.com/in/le-linh-nguyen-21092002/">
                   <AiFillLinkedin />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span>
-                <a href="/">
-                  <BsFacebook />
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
-                <a href="/">
-                  <BsSlack />
+                <a href="https://drive.google.com/drive/folders/17DTx3zfmIPa0soIQR88iziUTulTYf-Sr?usp=sharing">
+                  <BsNewspaper />
                 </a>
               </span>
             </Zoom>
