@@ -7,6 +7,7 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import { BsNewspaper } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
+import classes from "../../styles/Footer/Footer.module.css"
 
 const Footer = () => {
   const scrollUp = () => {
@@ -83,9 +84,9 @@ const Footer = () => {
           </div>
         </div>
         <Fade>
-          <ArrowUp onClick={scrollUp}>
+          <div className={classes.arrowUpContainer} onClick={scrollUp}>
             <AiOutlineArrowUp />
-          </ArrowUp>
+          </div>
         </Fade>
       </Profile>
       <Form>
@@ -204,23 +205,6 @@ const Profile = styled.div`
         }
       }
     }
-  }
-`;
-const ArrowUp = styled.div`
-  width: 2rem;
-  height: 2rem;
-  background-color: #01be96;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-top: 2rem;
-  @media (max-width: 650px) {
-    position: absolute;
-    right: 3rem;
-    top: 16rem;
   }
 `;
 const Form = styled.div`
