@@ -7,7 +7,7 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import { BsNewspaper } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
-import classes from "../../styles/Footer/Footer.module.css"
+import classes from "../../styles/Footer/Footer.module.css";
 
 const Footer = () => {
   const scrollUp = () => {
@@ -110,7 +110,7 @@ const Footer = () => {
               </span>
               <textarea cols="30" rows="10" placeholder="Message..."></textarea>
             </div>
-            <button>Submit</button>
+            <button className={classes.formSubmitButton}>Submit</button>
           </form>
         </Slide>
       </Form>
@@ -243,19 +243,6 @@ const Form = styled.div`
       .messageIcon {
         align-items: flex-start;
         padding-top: 0.5rem;
-      }
-    }
-
-    button {
-      width: 5rem;
-      height: 1.8rem;
-      background-color: #01be96;
-      border: none;
-      border-radius: 5px;
-      filter: drop-shadow(0px 4px 5px #01be9551);
-      cursor: pointer;
-      :hover {
-        filter: drop-shadow(0px 6px 9px #01be9551);
       }
     }
   }

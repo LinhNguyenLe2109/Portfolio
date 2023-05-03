@@ -13,6 +13,21 @@
   margin-top: 2rem;
 }
 
+.formSubmitButton {
+  width: 5rem;
+  height: 1.8rem;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  filter: drop-shadow(0px 4px 5px var(--drop-shadow-1));
+  cursor: pointer;
+}
+
+.formSubmitButton:hover {
+  filter: drop-shadow(0px 6px 9px var(--drop-shadow-2));
+}
+
 @media (max-width: 650px) {
   .arrowUpContainer {
     position: absolute;
