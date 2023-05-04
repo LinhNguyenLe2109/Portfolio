@@ -414,6 +414,10 @@ video {
 .relative{
   position: relative;
 }
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
 .flex{
   display: flex;
 }
@@ -434,10 +438,6 @@ video {
 }
 .capitalize{
   text-transform: capitalize;
-}
-.text-red-500{
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 .outline{
   outline-style: solid;
