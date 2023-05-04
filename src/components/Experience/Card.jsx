@@ -8,12 +8,12 @@ const Card = (props) => {
       {/* <span className='green'><Icon/></span>
         <h1>{title}</h1>
         <p>{disc}</p> */}
-      <span className="green">
+      <span className="purple">
         <Icon />
       </span>
-      <h3>{title}</h3>
+      <h3 className="text-3xl font-bold underline">{title}</h3>
       <div>
-        
+
       </div>
       <p>{disc}</p>
     </Container>
