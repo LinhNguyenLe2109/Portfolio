@@ -1,7 +1,7 @@
 import React from "react";
 import { MdDesignServices } from "react-icons/md";
 import { CgWebsite } from "react-icons/cg";
-import {HiDesktopComputer} from "react-icons/hi"
+import { HiDesktopComputer } from "react-icons/hi";
 import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
@@ -9,32 +9,36 @@ import { Slide } from "react-awesome-reveal";
 const Experiences = () => {
   return (
     <Container id="service">
-      <Slide direction="down">
-        <h2>My <span className="purple">Experiences</span></h2>
+      <Slide triggerOnce="true" direction="down">
+        <h2>
+          My <span className="purple">Experiences</span>
+        </h2>
       </Slide>
       <Cards>
-        <Slide direction="left">
+        <Slide triggerOnce="true" direction="left">
           <Card
             Icon={MdDesignServices}
             title={"IPC144 Lab Assistant"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            desc={[
+              `Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`,
+            ]}
           />
         </Slide>
-        <Slide direction="up">
+        <Slide triggerOnce="true" direction="up">
           <Card
             Icon={HiDesktopComputer}
             title={"Web developer"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
           />
         </Slide>
-        <Slide direction="right">
+        <Slide triggerOnce="true" direction="right">
           <Card
             Icon={CgWebsite}
             title={"web designer"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            desc={[
+              `Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`,
+            ]}
           />
         </Slide>
       </Cards>
