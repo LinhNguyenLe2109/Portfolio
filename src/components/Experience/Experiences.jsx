@@ -1,10 +1,13 @@
 import React from "react";
+// delete these later
 import { MdDesignServices } from "react-icons/md";
 import { CgWebsite } from "react-icons/cg";
 import { HiDesktopComputer } from "react-icons/hi";
 import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
+//testing
+import SliderComp from "./Slider";
 
 const Experiences = () => {
   return (
@@ -14,7 +17,8 @@ const Experiences = () => {
           My <span className="purple">Experiences</span>
         </h2>
       </Slide>
-      <Cards>
+      <SliderComp/>
+      {/* <Cards>
         <Slide triggerOnce="true" direction="left">
           <Card
             Icon={MdDesignServices}
@@ -41,7 +45,7 @@ const Experiences = () => {
             ]}
           />
         </Slide>
-      </Cards>
+      </Cards> */}
     </Container>
   );
 };

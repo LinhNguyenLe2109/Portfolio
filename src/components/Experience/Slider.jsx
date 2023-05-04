@@ -1,29 +1,32 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
-import Project from "./Project";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import styled from "styled-components";
+import { MdDesignServices } from "react-icons/md";
+import { CgWebsite } from "react-icons/cg";
+import { HiDesktopComputer } from "react-icons/hi";
+import Card from "./Card";
 
 let data = [
   {
-    img: "https://res.cloudinary.com/ghazni/image/upload/v1661324124/Yt-portfolio/ui5_mnvdaw.png",
-    disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+    Icon: MdDesignServices,
+    title: "IPC144 Lab Assistant",
+    desc: [
+      `Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`,
+    ],
   },
   {
-    img: "https://res.cloudinary.com/ghazni/image/upload/v1661324074/Yt-portfolio/ui4_jku3ol.png",
-    disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+    Icon: HiDesktopComputer,
+    title: "Web developer",
   },
   {
-    img: "https://res.cloudinary.com/ghazni/image/upload/v1661323981/Yt-portfolio/ui2_wtollo.png",
-    disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
-  },
-  {
-    img: "https://res.cloudinary.com/ghazni/image/upload/v1661323980/Yt-portfolio/ui3_akynn4.png",
-    disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
-  },
-  {
-    img: "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
-    disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+    Icon: CgWebsite,
+    title: "web designer",
+    desc: [
+      `Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`,
+    ],
   },
 ];
 
@@ -70,17 +73,25 @@ var settings = {
 const SliderComp = () => {
   const arrowRef = useRef(null);
   let sliderProject = "";
-  sliderProject = data.map((item, i) => <Project item={item} key={i} />);
+  sliderProject = data.map((item, i) => (
+    <Card key={i} Icon={item.Icon} title={item.title} desc={item.desc} />
+  ));
   return (
     <Container>
       <Slider ref={arrowRef} {...settings}>
         {sliderProject}
       </Slider>
       <Buttons>
-        <button onClick={() => arrowRef.current.slickPrev()} className="back">
+        <button
+          onClick={() => arrowRef.current.slickPrev()}
+          className="back text-mainColor"
+        >
           <IoIosArrowBack />
         </button>
-        <button onClick={() => arrowRef.current.slickNext()} className="next">
+        <button
+          onClick={() => arrowRef.current.slickNext()}
+          className="next text-mainColor"
+        >
           <IoIosArrowForward />
         </button>
       </Buttons>
@@ -100,7 +111,6 @@ const Buttons = styled.div`
     height: 2rem;
     background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
-    color: #01be96;
     border: none;
     position: absolute;
     top: 45%;
