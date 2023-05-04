@@ -25,7 +25,7 @@ const Experiences = () => {
             ]}
           />
         </Slide>
-        <Slide triggerOnce="true" direction="up">
+        <Slide triggerOnce="true" direction="left">
           <Card
             Icon={HiDesktopComputer}
             title={"Web developer"}
