@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import classes from "../../styles/Experience/Experiences.module.css"
 
 const Card = (props) => {
   const { Icon, disc, title } = props;
   return (
-    <Container>
+    <Container className={`${classes.cardContainer} relative`}>
       {/* <span className='green'><Icon/></span>
         <h1>{title}</h1>
         <p>{disc}</p> */}
@@ -17,14 +18,14 @@ const Card = (props) => {
         <p>
           January 20<sup>th</sup>, 1975 - December 31<sup>st</sup>, 2000
         </p>
-        <p className="text-mainColor">TDSB (Toronto District School Board)</p>
+        <p className="text-mainColor mb-3">TDSB (Toronto District School Board)</p>
       </div>
-      <div>
+      <div className={classes.cardDesc}>
         <ul className="list-disc list-inside">
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo porro rerum minus quia nemo doloribus suscipit delectus quibusdam at iste veritatis cupiditate dolorum, fuga sed vero eaque tempore, labore consequuntur corporis debitis. Eligendi, nostrum blanditiis.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo porro rerum minus quia nemo doloribus suscipit delectus quibusdam at iste veritatis cupiditate dolorum, fuga sed vero eaque tempore, labore consequuntur corporis debitis. Eligendi, nostrum blanditiis.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo porro rerum minus quia nemo doloribus suscipit delectus quibusdam at iste veritatis cupiditate dolorum, fuga sed vero eaque tempore, labore consequuntur corporis debitis. Eligendi, nostrum blanditiis.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo porro rerum minus quia nemo doloribus suscipit delectus quibusdam at iste veritatis cupiditate dolorum, fuga sed vero eaque tempore, labore consequuntur corporis debitis. Eligendi, nostrum blanditiis.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta totam corporis vel tenetur nobis veritatis voluptates nulla officia voluptatibus eveniet?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta totam corporis vel tenetur nobis veritatis voluptates nulla officia voluptatibus eveniet?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta totam corporis vel tenetur nobis veritatis voluptates nulla officia voluptatibus eveniet?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta totam corporis vel tenetur nobis veritatis voluptates nulla officia voluptatibus eveniet?</li>
         </ul>
       </div>
       {/* <p>{disc}</p> */}
