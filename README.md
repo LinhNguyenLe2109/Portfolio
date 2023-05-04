@@ -18,3 +18,4 @@ This portfolio template is created by [Milad Amiri](https://github.com/DigitalGe
 - [Styled-Components](https://styled-components.com)
 - [React Slick](https://react-slick.neostack.com)
 - [React Awesome Reveal](https://react-awesome-reveal.morello.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)

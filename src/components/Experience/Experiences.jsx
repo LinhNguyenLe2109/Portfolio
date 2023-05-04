@@ -1,33 +1,30 @@
 import React from "react";
 import { MdDesignServices } from "react-icons/md";
-import { FiCodesandbox } from "react-icons/fi";
 import { CgWebsite } from "react-icons/cg";
+import {HiDesktopComputer} from "react-icons/hi"
 import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
 
-const Services = () => {
+const Experiences = () => {
   return (
     <Container id="service">
       <Slide direction="down">
-        <h4>
-          My <span className="green">services</span>
-        </h4>
-        <h1>What I Do</h1>
+        <h2>My <span className="purple">Experiences</span></h2>
       </Slide>
       <Cards>
         <Slide direction="left">
           <Card
             Icon={MdDesignServices}
-            title={"ui/ux designer"}
+            title={"IPC144 Lab Assistant"}
             disc={`Lorem ipsum dolor sit amet consectetur 
                 adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
           />
         </Slide>
         <Slide direction="up">
           <Card
-            Icon={FiCodesandbox}
-            title={"graphic designer"}
+            Icon={HiDesktopComputer}
+            title={"Web developer"}
             disc={`Lorem ipsum dolor sit amet consectetur 
                 adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
           />
@@ -45,7 +42,7 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Experiences;
 
 const Container = styled.div`
   width: 80%;
@@ -56,8 +53,9 @@ const Container = styled.div`
     width: 90%;
   }
 
-  h1 {
+  h2 {
     padding-top: 1rem;
+    font-size: 2rem;s
   }
 `;
 const Cards = styled.div`
