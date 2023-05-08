@@ -11,14 +11,19 @@ import SliderComp from "./Slider";
 
 const Experiences = () => {
   return (
+    // work on this later
     <Container id="service">
+      {/* {" "}
       <Slide triggerOnce="true" direction="down">
+        {" "}
         <h2>
-          My <span className="purple">Experiences</span>
+           My <span className="purple">Experiences</span>
+          {" "}
         </h2>
+        {" "}
       </Slide>
-      <SliderComp/>
-      {/* <Cards>
+      <SliderComp /> */}
+      <Cards>
         <Slide triggerOnce="true" direction="left">
           <Card
             Icon={MdDesignServices}
@@ -30,10 +35,7 @@ const Experiences = () => {
           />
         </Slide>
         <Slide triggerOnce="true" direction="left">
-          <Card
-            Icon={HiDesktopComputer}
-            title={"Web developer"}
-          />
+          <Card Icon={HiDesktopComputer} title={"Web developer"} />
         </Slide>
         <Slide triggerOnce="true" direction="right">
           <Card
@@ -45,7 +47,7 @@ const Experiences = () => {
             ]}
           />
         </Slide>
-      </Cards> */}
+      </Cards>
     </Container>
   );
 };

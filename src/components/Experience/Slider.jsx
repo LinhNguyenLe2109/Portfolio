@@ -28,6 +28,22 @@ let data = [
             adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`,
     ],
   },
+  {
+    Icon: MdDesignServices,
+    title: "IPC144 Lab Assistant",
+    desc: [
+      `Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`,
+    ],
+  },
+  {
+    Icon: MdDesignServices,
+    title: "IPC144 Lab Assistant",
+    desc: [
+      `Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`,
+    ],
+  },
 ];
 
 var settings = {
@@ -73,8 +89,11 @@ var settings = {
 const SliderComp = () => {
   const arrowRef = useRef(null);
   let sliderProject = "";
+  // sliderProject = data.map((item, i) => (
+  //   <Card key={i} Icon={item.Icon} title={item.title} desc={item.desc} />
+  // ));
   sliderProject = data.map((item, i) => (
-    <Card key={i} Icon={item.Icon} title={item.title} desc={item.desc} />
+    <div key={i} className={`bg-mainColor`}></div>
   ));
   return (
     <Container>
