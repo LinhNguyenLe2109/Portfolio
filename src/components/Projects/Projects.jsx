@@ -1,21 +1,23 @@
 import React from "react";
 import styled from "styled-components";
-import SliderComp from "./Slider";
 import { Zoom } from "react-awesome-reveal";
+
+import SliderComp from "./Slider"; 
+import Project from "./Project";
 
 const Projects = () => {
   return (
     <Container id="project">
-      <Zoom>
-        <h1>
+      <Zoom triggerOnce="true">
+        <h2>
           Recent <span className="purple">Projects</span>
-        </h1>
-        <p>
-          What I'm doing and what I've done so far
-        </p>
+        </h2>
+        <p>What I'm doing and what I've done so far</p>
       </Zoom>
       <Slide>
-        <SliderComp />
+        {/* <SliderComp /> */}
+        <Project/>
+        <Project/>
       </Slide>
     </Container>
   );
@@ -33,7 +35,7 @@ const Container = styled.div`
   @media (max-width: 840px) {
     width: 90%;
   }
-  h1 {
+  h2 {
     font-size: 1.9rem;
   }
 

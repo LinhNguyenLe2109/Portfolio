@@ -1,7 +1,6 @@
 import React from "react";
 // delete these later
 import { MdDesignServices } from "react-icons/md";
-import { CgWebsite } from "react-icons/cg";
 import { HiDesktopComputer } from "react-icons/hi";
 import styled from "styled-components";
 import Card from "./Card";
@@ -20,6 +19,7 @@ const Experiences = () => {
           My <span className="purple">Experiences</span>{" "}
         </h2>{" "}
       </Slide>
+      {/* todo */}
       {/* <SliderComp /> */}
       <Cards>
         <Slide triggerOnce="true" direction="left">
