@@ -3,7 +3,7 @@ import styled from "styled-components";
 import classes from "../../styles/Experience/Experiences.module.css";
 
 const Card = (props) => {
-  const { Icon, desc, title } = props;
+  const { Icon, desc, title, company, startTime, endTime } = props;
   const [active, setActive] = useState(false);
   return (
     <Container
@@ -17,10 +17,10 @@ const Card = (props) => {
       <div className="text-center">
         <h3>{title}</h3>
         <p>
-          January 20<sup>th</sup>, 1975 - December 31<sup>st</sup>, 2000
+          {startTime} - {endTime}
         </p>
         <p className="text-mainColor mb-3">
-          TDSB (Toronto District School Board)
+          {company}
         </p>
       </div>
       <div className={classes.cardDesc}>
