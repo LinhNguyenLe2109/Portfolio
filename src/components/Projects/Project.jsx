@@ -1,15 +1,38 @@
-import React from 'react'
-import styled from 'styled-components';
-
+import React from "react";
+import styled from "styled-components";
+import classes from "../../styles/Projects/Project.module.css"
 
 const Project = (props) => {
   return (
-    <div className='project'>
-        {/* todo */}
-        <h1>Hi</h1>
+    <div className={`${classes.project} mb-10 p-4 rounded-2xl`}>
+      {/* todo */}
+      <div className="flex">
+        <div className="desc">
+          <h3 className="">Project's name</h3>
+          <hr />
+          <p className="techStack">React, Next.js, Bootstrap</p>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
+              quia, deleniti aliquam libero eos voluptatibus mollitia minus nam
+              aut quis hic adipisci, accusantium, magnam assumenda perferendis
+              molestias voluptates qui ex.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Perferendis obcaecati debitis ut et! Quod temporibus earum
+              perferendis, itaque assumenda neque magni vitae rerum repellat
+              quo.
+            </li>
+          </ul>
+        </div>
+        <div className="imgHolder">
+          <img alt="Project's Prototype" src="\images\restaurantMockUp.png" />
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default Project;
 
@@ -57,7 +80,7 @@ export default Project;
 //         h1{
 //             font-size: 1rem;
 //         }
-    
+
 //         p{
 //             width: 90%;
 //             font-size: 0.8rem;

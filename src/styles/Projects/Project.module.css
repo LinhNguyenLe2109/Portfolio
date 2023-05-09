@@ -1,0 +1,10 @@
+@import "../../index.css";
+.project {
+  background: linear-gradient(
+    90deg,
+    rgba(39, 39, 40, 1) 0%,
+    rgba(23, 23, 31, 1) 35%,
+    rgba(27, 27, 27, 1) 100%
+  );
+  box-shadow: var(--drop-shadow-1) 0px 5px 15px;
+}
