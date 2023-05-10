@@ -1,17 +1,22 @@
 import React from "react";
 import styled from "styled-components";
-import classes from "../../styles/Projects/Project.module.css"
+import classes from "../../styles/Projects/Project.module.css";
 
 const Project = (props) => {
   return (
-    <div className={`${classes.project} mb-10 p-4 rounded-2xl`}>
+    <div className={`${classes.project} my-10 p-4 rounded-2xl`}>
       {/* todo */}
       <div className="flex">
         <div className="desc">
-          <h3 className="">Project's name</h3>
-          <hr />
-          <p className="techStack">React, Next.js, Bootstrap</p>
-          <ul>
+          <h3 className="text-2xl text-mainColor text-center">
+            Project's name
+          </h3>
+          <p className="techStack text-sm mb-2 text-center">
+            React, Next.js, Bootstrap
+          </p>
+          <hr className="my-3 mx-10" />
+
+          <ul className="list-disc list-inside">
             <li>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
               quia, deleniti aliquam libero eos voluptatibus mollitia minus nam
