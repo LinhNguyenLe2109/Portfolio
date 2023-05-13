@@ -5,6 +5,7 @@ import Clients from "./components/Clients/Clients";
 import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 import Experiences from "./components/Experience/Experiences";
+import Skill from "./components/Skills/Skill";
 function App() {
   return (
     <Container>
@@ -17,6 +18,7 @@ function App() {
         <Projects />
       </LightColor>
       <Clients />
+      <Skill />
       <LightColor>
         <Footer />
       </LightColor>

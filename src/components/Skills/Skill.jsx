@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import styled from "styled-components";
-import ClientSlider from "./ClientSlider";
+import SkillSlider from "./SkillSlider";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Slide } from "react-awesome-reveal";
 
@@ -79,15 +79,15 @@ var settings = {
   ],
 };
 
-const Clients = () => {
+const Skill = () => {
   const arrowRef = useRef(null);
   let clientDisc = "";
-  clientDisc = clients.map((item, i) => <ClientSlider item={item} key={i} />);
+  clientDisc = clients.map((item, i) => <SkillSlider item={item} key={i} />);
   return (
     <Container id="client">
       <Slide direction="left">
-        <span className="green">testimonials</span>
-        <h1>what clients say</h1>
+        <p className="green">Technical Skills</p>
+        <h2>All the technology I have experienced so far</h2>
       </Slide>
       <Testimonials>
         <Slider ref={arrowRef} {...settings}>
@@ -106,7 +106,7 @@ const Clients = () => {
   );
 };
 
-export default Clients;
+export default Skill;
 
 const Container = styled.div`
   width: 80%;
