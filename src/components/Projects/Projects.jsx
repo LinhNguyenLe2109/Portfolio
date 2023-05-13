@@ -14,11 +14,20 @@ const Projects = () => {
         </h2>
         <p className="text-center">What I'm doing and what I've done so far</p>
       </Zoom>
-      <Slide>
-        {/* <SliderComp /> */}
-        <Project />
-        <Project />
-      </Slide>
+      <Project
+        name="NeoFood Restaurant"
+        link="https://neofood-62k8fgsxq-linhnguyenle2109.vercel.app/"
+        techStack={["Next.js", "Bootstrap", "Jotai", "React-Bootstrap"]}
+        imgLink="\images\restaurantMockUp.png"
+        desc={[
+          "Enabled users to browse a list of dishes based on cuisine type and place an order",
+          "Fetched reliable food data from Spoonacular API",
+          "Utilized concepts like useState, useEffect, useAtom, useRouter, useSWR, etc",
+          "Made compatible with multiple screen sizes, providing a user-friendly experience across all devices.",
+        ]}
+      />
+
+      {/* <SliderComp /> */}
     </Container>
   );
 };

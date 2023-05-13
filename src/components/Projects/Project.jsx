@@ -1,41 +1,41 @@
 import React from "react";
 import styled from "styled-components";
 import classes from "../../styles/Projects/Project.module.css";
-
+import { Zoom } from "react-awesome-reveal";
 const Project = (props) => {
   return (
-    <div className={`${classes.project} my-10 p-4 rounded-2xl`}>
-      {/* todo */}
-      <div className="flex">
-        <div className="desc">
-          <h3 className="text-2xl text-mainColor text-center">
-            Project's name
-          </h3>
-          <p className="techStack text-sm mb-2 text-center">
-            React, Next.js, Bootstrap
-          </p>
-          <hr className="my-3 mx-10" />
+    <Zoom triggerOnce="true">
+      <a href={props.link} target="_blank" rel="noreferrer">
+        <div className={`${classes.project} my-10 p-4 rounded-2xl`}>
+          {/* todo */}
+          <div className="md:flex items-center">
+            <div className="desc">
+              <h3 className="text-2xl text-mainColor text-center">
+                {props.name}
+              </h3>
 
-          <ul className="list-disc list-inside">
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
-              quia, deleniti aliquam libero eos voluptatibus mollitia minus nam
-              aut quis hic adipisci, accusantium, magnam assumenda perferendis
-              molestias voluptates qui ex.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Perferendis obcaecati debitis ut et! Quod temporibus earum
-              perferendis, itaque assumenda neque magni vitae rerum repellat
-              quo.
-            </li>
-          </ul>
+              <p className="techStack text-sm mb-2 text-center">
+                {props.techStack.join(", ")}
+              </p>
+              <hr className="my-3 mx-10" />
+
+              <ul className="list-disc list-inside">
+                {props.desc.map((note, idx) => (
+                  <li key={idx}>{note}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="imgHolder max-w-lg mx-auto">
+              <img
+                alt="Project's Prototype"
+                src={props.imgLink}
+                className="w-full"
+              />
+            </div>
+          </div>
         </div>
-        <div className="imgHolder">
-          <img alt="Project's Prototype" src="\images\restaurantMockUp.png" />
-        </div>
-      </div>
-    </div>
+      </a>
+    </Zoom>
   );
 };
 
