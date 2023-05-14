@@ -69,7 +69,7 @@ const Container = styled.div`
 
   h2 {
     padding-top: 1rem;
-    font-size: 2rem;s
+    font-size: 2rem;
   }
 `;
 const Cards = styled.div`
