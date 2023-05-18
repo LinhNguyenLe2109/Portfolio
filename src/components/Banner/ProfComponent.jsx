@@ -10,19 +10,22 @@ const ProfComponent = () => {
     <Container id="home">
       <Slide direction="left" triggerOnce="true">
         <Texts>
-          <h4>
+          <p className="mt-5 font-medium text-xl ">
             Hello <span className="purple">I'am</span>
-          </h4>
-          <h1 className="purple">Linh Nguyen Le</h1>
-          <h3>
+          </p>
+          <h1 className="purple text-5xl my-5">Linh Nguyen Le</h1>
+          <p className="mt-5 font-medium text-lg">
             5<sup>th</sup> semester student @ Seneca College
-          </h3>
+          </p>
           {/* <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
             iusto. Adipisci in qui officia provident tenetur sequi, deserunt
-            corporis quos?
+            corporis  quos?
           </p> */}
-          <button className={classes["text-button"]}>Let's talk</button>
+          <button className={classes["text-button"]} onClick={e =>{
+            e.preventDefault();
+            window.location.href = "#about";
+          }}>Let's talk</button>
           <Social>
             <p>Check out my</p>
             <div className={classes[`social-icons`]}>
@@ -75,14 +78,16 @@ export default ProfComponent;
 const Container = styled.div`
   display: flex;
   gap: 2rem;
-  padding-top: 3rem;
   width: 80%;
   max-width: 1280px;
   margin: 0 auto;
   z-index: 1;
   justify-content: space-between;
+  align-items: center;
+  min-height: 75vh;
   @media (max-width: 840px) {
     width: 90%;
+    height: 100%;
   }
 
   @media (max-width: 640px) {
@@ -92,23 +97,9 @@ const Container = styled.div`
 `;
 const Texts = styled.div`
   flex: 1;
-  h4 {
-    padding: 1rem 0;
-    font-weight: 500;
-  }
   h1 {
-    font-size: 2rem;
     font-family: "Secular One", sans-serif;
     letter-spacing: 2px;
-  }
-  h3 {
-    font-weight: 500;
-    font-size: 1.2rem;
-    padding-bottom: 1.2rem;
-    text-transform: capitalize;
-  }
-  p {
-    font-weight: 300;
   }
 `;
 const Social = styled.div`

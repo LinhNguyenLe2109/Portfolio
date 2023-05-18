@@ -178,8 +178,9 @@ const Profile = styled.div`
         align-items: center;
         justify-content: center;
         background-color: #000;
-        width: 2rem;
-        height: 2rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
         margin-right: 0.5rem;
         border-radius: 50px;
 

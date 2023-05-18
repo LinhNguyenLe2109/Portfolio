@@ -8,13 +8,18 @@ const Header = () => {
     <Container bar={bar}>
       <Logo>
         <span className="purple">
-          <GiLaptop />
+          <a href="#home">
+            <GiLaptop />
+          </a>
         </span>
         <h1>Portfolio</h1>
       </Logo>
       <Nav bar={bar}>
         <span>
           <a href="#home">Home</a>
+        </span>
+        <span>
+          <a href="#about">About</a>
         </span>
         <span>
           <a href="#service">Experience</a>
@@ -109,7 +114,7 @@ const Nav = styled.div`
     position: fixed;
     display: flex;
     flex-direction: column;
-    background-color: #01be96;
+    background-color: #d400ff;
     inset: 0;
     justify-content: center;
     align-items: center;

@@ -10,16 +10,16 @@ const Card = (props) => {
       onClick={() => setActive((active) => !active)}
       className={`${classes.cardContainer} ${active ? "show" : ""} relative`}
     >
-      <span className="purple">
+      <span className="purple text-8xl">
         <Icon className="mx-auto" />
       </span>
 
       <div className="text-center">
-        <h3>{title}</h3>
-        <p>
+        <h3 className="text-xl">{title}</h3>
+        <p className="text-sm">
           {startTime} - {endTime}
         </p>
-        <p className="text-mainColor mb-3">
+        <p className="text-mainColor mb-3 text-lg">
           {company}
         </p>
       </div>
@@ -43,15 +43,4 @@ const Container = styled.div`
   width: 100%;
   background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
   padding: 1rem;
-  span {
-    font-size: 4rem;
-  }
-
-  h3 {
-    font-size: 1.2rem;
-  }
-
-  p {
-    font-size: 0.8rem;
-  }
 `;
