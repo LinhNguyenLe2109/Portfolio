@@ -19,62 +19,66 @@ const Footer = () => {
   return (
     <Container id="footer">
       <Profile>
-        <Slide direction="left">
-          <h1>Contact me</h1>
+        <Slide direction="left" triggerOnce="true">
+          <h2 className="text-3xl">
+            Contact <span className="text-mainColor">me</span>
+          </h2>
         </Slide>
-        <div className="address">
-          <Slide direction="left">
-            <h1>Address:</h1>
+        <div className="address my-2">
+          <Slide direction="left" triggerOnce="true">
+            <h3 className="text-xl mb-1 text-mainColor">Address:</h3>
           </Slide>
-          <Slide direction="left">
+          <Slide direction="left" triggerOnce="true">
             <p>North York, ON, Canada</p>
           </Slide>
         </div>
-        <div className="links">
-          <Slide direction="left">
-            <h1>Reach out to me directly:</h1>
+        <div className="links my-2">
+          <Slide direction="left" triggerOnce="true">
+            <h3 className="text-xl text-mainColor mb-1">
+              Reach out to me directly:
+            </h3>
           </Slide>
           <div>
             <span>
               <FiPhoneCall />
             </span>
-            <Slide direction="left">
+            <Slide direction="left" triggerOnce="true">
               <a href="tel:+1-647-562-7948">+1 (647) 562-7948</a>
             </Slide>
           </div>
           <div>
-            <Slide direction="left">
+            <Slide direction="left" triggerOnce="true">
               <span>
                 <HiOutlineMailOpen />
               </span>
             </Slide>
-            <Slide>
+            <Slide triggerOnce="true">
               <a href="mailto:lelinhnguyen2109@gmail.com">
                 lelinhnguyen2109@gmail.com
               </a>
             </Slide>
           </div>
         </div>
-        <div className="profiles">
-          <Slide direction="left">
-            <h1>Check my profiles</h1>
+        <div className="profiles my-2">
+          <Slide direction="left" triggerOnce="true">
+            <h3 className="text-xl text-mainColor mb-1">Check my profiles</h3>
           </Slide>
           <div className="icons">
-            <Zoom>
+            <Zoom triggerOnce="true">
               <span>
                 <a href="https://github.com/LinhNguyenLe2109">
                   <AiFillGithub />
                 </a>
               </span>
             </Zoom>
-            <Zoom>
+            <Zoom triggerOnce="true">
               <span>
                 <a href="https://www.linkedin.com/in/le-linh-nguyen-21092002/">
                   <AiFillLinkedin />
                 </a>
               </span>
             </Zoom>
-            <Zoom>
+            <Zoom triggerOnce="true">
               <span>
                 <a href="https://drive.google.com/drive/folders/17DTx3zfmIPa0soIQR88iziUTulTYf-Sr?usp=sharing">
                   <BsNewspaper />
@@ -90,7 +94,7 @@ const Footer = () => {
         </Fade>
       </Profile>
       <Form>
-        <Slide direction="right">
+        <Slide direction="right" triggerOnce="true">
           <form>
             <div className="name">
               <span>
@@ -110,7 +114,7 @@ const Footer = () => {
               </span>
               <textarea cols="30" rows="10" placeholder="Message..."></textarea>
             </div>
-            <button className={classes.formSubmitButton}>Submit</button>
+            <button className={`${classes.formSubmitButton} text-md`}>Submit</button>
           </form>
         </Slide>
       </Form>
@@ -141,14 +145,8 @@ const Container = styled.div`
 const Profile = styled.div`
   flex: 1;
   .address {
-    padding: 1rem 0;
-    h1 {
-      font-size: 1.2rem;
-    }
-
     p {
       width: 60%;
-      padding-top: 0.5rem;
       @media (max-width: 650px) {
         width: 100%;
       }
@@ -156,11 +154,6 @@ const Profile = styled.div`
   }
 
   .links {
-    h1 {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
-
     div {
       display: flex;
       align-items: center;
@@ -176,11 +169,6 @@ const Profile = styled.div`
   }
 
   .profiles {
-    h1 {
-      font-size: 1.2rem;
-      padding: 1rem 0;
-    }
-
     .icons {
       display: flex;
       align-items: center;
@@ -209,10 +197,6 @@ const Profile = styled.div`
 `;
 const Form = styled.div`
   flex: 1;
-  h1 {
-    font-size: 1.3rem;
-    padding-bottom: 0.7rem;
-  }
 
   form {
     background-color: #191923;

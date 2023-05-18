@@ -5,8 +5,6 @@ import { HiDesktopComputer } from "react-icons/hi";
 import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
-//testing
-import SliderComp from "./Slider";
 
 const Experiences = () => {
   return (

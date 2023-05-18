@@ -4,12 +4,14 @@ import ProfComponent from "./components/Banner/ProfComponent";
 import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 import Experiences from "./components/Experience/Experiences";
+import About from "./components/Banner/About";
 function App() {
   return (
     <Container>
       <Banner>
         <Header />
         <ProfComponent />
+        <About />
       </Banner>
       <Experiences />
       <LightColor>
