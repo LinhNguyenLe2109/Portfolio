@@ -19,9 +19,7 @@ const Card = (props) => {
         <p className="text-sm">
           {startTime} - {endTime}
         </p>
-        <p className="text-mainColor mb-3 text-lg">
-          {company}
-        </p>
+        <p className="text-mainColor mb-3 text-lg">{company}</p>
       </div>
       <div className={classes.cardDesc}>
         {desc && (
@@ -41,6 +39,8 @@ export default Card;
 
 const Container = styled.div`
   width: 100%;
-  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+  background: #191923;
   padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 `;

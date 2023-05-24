@@ -15,9 +15,9 @@ function App() {
       </Banner>
       <About />
       <LightColor>
-        <Activities />
+        <Experiences />
       </LightColor>
-      <Experiences />
+      <Activities />
       <LightColor>
         <Projects />
       </LightColor>

@@ -7,7 +7,7 @@ function About() {
     <Zoom triggerOnce="true">
       <div
         id="about"
-        className={`w-11/12 lg:w-7/12 rounded-xl p-5 mt-24 mx-auto ${classes.container}`}
+        className={`w-11/12 lg:w-7/12 rounded-xl p-5 my-24 mx-auto ${classes.container}`}
       >
         <h2 className="text-3xl mb-6">
           About <span className="text-mainColor">me</span>
