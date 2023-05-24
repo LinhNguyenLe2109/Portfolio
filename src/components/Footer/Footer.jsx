@@ -93,7 +93,8 @@ const Footer = () => {
           </div>
         </Fade>
       </Profile>
-      <Form>
+      {/* todo */}
+      {/* <Form>
         <Slide direction="right" triggerOnce="true">
           <form>
             <div className="name">
@@ -117,7 +118,7 @@ const Footer = () => {
             <button className={`${classes.formSubmitButton} text-md`}>Submit</button>
           </form>
         </Slide>
-      </Form>
+      </Form> */}
     </Container>
   );
 };
