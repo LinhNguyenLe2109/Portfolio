@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 import Experiences from "./components/Experience/Experiences";
 import About from "./components/Banner/About";
+import Activities from "./components/Activities/Activities";
 function App() {
   return (
     <Container>
@@ -12,9 +13,10 @@ function App() {
         <Header />
         <ProfComponent />
       </Banner>
-      <DarkColor>
-        <About />
-      </DarkColor>
+      <About />
+      <LightColor>
+        <Activities />
+      </LightColor>
       <Experiences />
       <LightColor>
         <Projects />
