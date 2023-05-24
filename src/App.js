@@ -17,11 +17,11 @@ function App() {
       <LightColor>
         <Experiences />
       </LightColor>
-      <Activities />
+      {/* <Activities /> */}
+      <Projects />
       <LightColor>
-        <Projects />
+        <Footer />
       </LightColor>
-      <Footer />
     </Container>
   );
 }
