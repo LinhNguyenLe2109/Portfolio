@@ -65,25 +65,19 @@ const Footer = () => {
           </Slide>
           <div className="icons">
             <Zoom triggerOnce="true">
-              <span>
-                <a href="https://github.com/LinhNguyenLe2109">
-                  <AiFillGithub />
-                </a>
-              </span>
+              <a href="https://github.com/LinhNguyenLe2109">
+                <AiFillGithub className="test" />
+              </a>
             </Zoom>
             <Zoom triggerOnce="true">
-              <span>
-                <a href="https://www.linkedin.com/in/le-linh-nguyen-21092002/">
-                  <AiFillLinkedin />
-                </a>
-              </span>
+              <a href="https://www.linkedin.com/in/le-linh-nguyen-21092002/">
+                <AiFillLinkedin />
+              </a>
             </Zoom>
             <Zoom triggerOnce="true">
-              <span>
-                <a href="https://drive.google.com/drive/folders/17DTx3zfmIPa0soIQR88iziUTulTYf-Sr?usp=sharing">
-                  <BsNewspaper />
-                </a>
-              </span>
+              <a href="https://drive.google.com/drive/folders/17DTx3zfmIPa0soIQR88iziUTulTYf-Sr?usp=sharing">
+                <BsNewspaper />
+              </a>
             </Zoom>
           </div>
         </div>
@@ -174,7 +168,7 @@ const Profile = styled.div`
       display: flex;
       align-items: center;
 
-      span {
+      a {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -184,15 +178,14 @@ const Profile = styled.div`
         font-size: 1.5rem;
         margin-right: 0.5rem;
         border-radius: 50px;
-
         :hover {
           background-color: orange;
         }
+      }
 
-        a {
-          margin-top: 0.2rem;
-          color: #fff;
-        }
+      .test {
+        margin-top: 0.2rem;
+        color: #fff;
       }
     }
   }

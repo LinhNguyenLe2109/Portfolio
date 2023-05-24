@@ -22,40 +22,42 @@ const ProfComponent = () => {
             iusto. Adipisci in qui officia provident tenetur sequi, deserunt
             corporis  quos?
           </p> */}
-          <button className={classes["text-button"]} onClick={e =>{
-            e.preventDefault();
-            window.location.href = "#about";
-          }}>Let's talk</button>
+          <button
+            className={classes["text-button"]}
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "#about";
+            }}
+          >
+            Let's talk
+          </button>
           <Social>
             <p>Check out my</p>
             <div className={classes[`social-icons`]}>
-              <span>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  href="https://www.linkedin.com/in/le-linh-nguyen-21092002/"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </span>
-              <span>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  href="https://github.com/LinhNguyenLe2109"
-                >
-                  <BsGithub />
-                </a>
-              </span>
-              <span>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  href="https://drive.google.com/drive/folders/17DTx3zfmIPa0soIQR88iziUTulTYf-Sr?usp=sharing"
-                >
-                  <BsEnvelopePaperFill />
-                </a>
-              </span>
+              <a
+                className={classes.link}
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.linkedin.com/in/le-linh-nguyen-21092002/"
+              >
+                <FaLinkedinIn className={classes.icon} />
+              </a>
+              <a
+                className={classes.link}
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/LinhNguyenLe2109"
+              >
+                <BsGithub className={classes.icon} />
+              </a>
+              <a
+                className={classes.link}
+                rel="noreferrer"
+                target="_blank"
+                href="https://drive.google.com/drive/folders/17DTx3zfmIPa0soIQR88iziUTulTYf-Sr?usp=sharing"
+              >
+                <BsEnvelopePaperFill className={classes.icon} />
+              </a>
             </div>
           </Social>
         </Texts>
@@ -63,7 +65,7 @@ const ProfComponent = () => {
       <Slide direction="right" triggerOnce="true">
         <div>
           <img
-          className={classes['profile-img']}
+            className={classes["profile-img"]}
             src="/images/intro-img.jpg"
             alt="profile"
           />
