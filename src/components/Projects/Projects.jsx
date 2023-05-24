@@ -9,10 +9,10 @@ const Projects = () => {
   return (
     <Container id="project">
       <Zoom triggerOnce="true">
-        <h2 className="text-center">
+        <h2>
           Recent <span className="purple">Projects</span>
         </h2>
-        <p className="text-center">What I'm doing and what I've done so far</p>
+        <p>What I'm doing and what I've done so far</p>
       </Zoom>
       <Project
         name="Lazyless"
