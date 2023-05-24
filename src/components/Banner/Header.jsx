@@ -6,14 +6,14 @@ const Header = () => {
   const [bar, setBar] = useState(false);
   return (
     <Container bar={bar}>
-      <Logo>
-        <span className="purple">
-          <a href="#home">
-            <GiLaptop />
-          </a>
-        </span>
-        <h1>Portfolio</h1>
-      </Logo>
+      <div>
+        <a href="#home" className="flex gap-x-3 items-center">
+          <span className="purple">
+            <GiLaptop className="text-4xl" />
+          </span>
+          <p className="text-2xl font-bold">Portfolio</p>
+        </a>
+      </div>
       <Nav bar={bar}>
         <span>
           <a href="#home">Home</a>
@@ -96,19 +96,8 @@ const Container = styled.div`
     }
   }
 `;
-const Logo = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  span {
-    font-size: 1.8rem;
-  }
 
-  h1 {
-    font-weight: 600;
-    font-size: 1.2rem;
-  }
-`;
+
 const Nav = styled.div`
   @media (max-width: 640px) {
     position: fixed;
