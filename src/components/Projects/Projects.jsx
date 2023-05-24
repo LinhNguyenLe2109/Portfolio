@@ -15,6 +15,18 @@ const Projects = () => {
         <p className="text-center">What I'm doing and what I've done so far</p>
       </Zoom>
       <Project
+        name="Lazyless"
+        link="https://github.com/LinhNguyenLe2109/PersonalManagementApp"
+        techStack={["Next.js", "TailwindCSS", "MongoDB"]}
+        imgLink="\images\inProgress.png"
+        desc={[
+          "Allow users to keep track of their daily activities and manage their time more effectively",
+          "Enabled users to log in/log out or simply enter their app id to access their personal dashboard",
+          "Users can add, edit, delete their tasks and view their progress",
+          "User data is stored in MongoDB Atlas, hashed and salted for security purposes"
+        ]}
+      />
+      <Project
         name="NeoFood Restaurant"
         link="https://neofood-62k8fgsxq-linhnguyenle2109.vercel.app/"
         techStack={["Next.js", "Bootstrap", "Jotai", "React-Bootstrap"]}

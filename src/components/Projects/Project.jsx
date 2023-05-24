@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import classes from "../../styles/Projects/Project.module.css";
 import { Zoom } from "react-awesome-reveal";
 const Project = (props) => {
@@ -10,7 +9,7 @@ const Project = (props) => {
           {/* todo */}
           <div className="md:flex items-center">
             <div className="desc">
-              <h3 className="text-2xl text-mainColor text-center">
+              <h3 className="text-2xl text-mainColor text-center font-semibold">
                 {props.name}
               </h3>
 
@@ -29,7 +28,7 @@ const Project = (props) => {
               <img
                 alt="Project's Prototype"
                 src={props.imgLink}
-                className="w-full"
+                className="w-full max-w-lg max-h-80 object-cover"
               />
             </div>
           </div>
