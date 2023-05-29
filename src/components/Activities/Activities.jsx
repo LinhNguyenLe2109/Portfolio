@@ -1,10 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import ActivityCard from "./ActivityCard";
 
 function Activities() {
   return (
     <Container>
-      <h2 className="pt-4 text-3xl">Activities and Achievements</h2>
+      <h2 className="pt-4 text-3xl mb-9">
+        <span className="text-mainColor">Activities</span> and{" "}
+        <span className="text-mainColor">Achievements</span>
+      </h2>
+      <ActivityCard />
     </Container>
   );
 }
