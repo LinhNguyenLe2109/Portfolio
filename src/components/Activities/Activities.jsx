@@ -4,7 +4,7 @@ import styled from "styled-components";
 function Activities() {
   return (
     <Container>
-      <h2 className="pt-4 text-3xl">Activities</h2>
+      <h2 className="pt-4 text-3xl">Activities and Achievements</h2>
     </Container>
   );
 }
