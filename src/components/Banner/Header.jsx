@@ -16,22 +16,34 @@ const Header = () => {
       </div>
       <Nav bar={bar}>
         <span>
-          <a href="#home">Home</a>
+          <a href="#home" onClick={() => setBar(false)}>
+            Home
+          </a>
         </span>
         <span>
-          <a href="#about">About</a>
+          <a href="#about" onClick={() => setBar(false)}>
+            About
+          </a>
         </span>
         <span>
-          <a href="#service">Experience</a>
+          <a href="#service" onClick={() => setBar(false)}>
+            Experience
+          </a>
         </span>
         <span>
-          <a href="#activity">Activities</a>
+          <a href="#activity" onClick={() => setBar(false)}>
+            Activities
+          </a>
         </span>
         <span>
-          <a href="#project">Projects</a>
+          <a href="#project" onClick={() => setBar(false)}>
+            Projects
+          </a>
         </span>
         <span>
-          <a href="#footer">Contact me</a>
+          <a href="#footer" onClick={() => setBar(false)}>
+            Contact me
+          </a>
         </span>
       </Nav>
       <div onClick={() => setBar(!bar)} className="bars">
@@ -99,7 +111,6 @@ const Container = styled.div`
     }
   }
 `;
-
 
 const Nav = styled.div`
   @media (max-width: 640px) {
