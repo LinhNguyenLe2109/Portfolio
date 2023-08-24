@@ -7,21 +7,16 @@ import classes from "../../styles/ProfComponent.module.css";
 
 const ProfComponent = () => {
   return (
-    <Container id="home">
+    <Container id="home" className="relative">
       <Slide direction="left" triggerOnce="true">
         <Texts>
           <p className="mt-5 font-medium text-xl ">
-            Hello <span className="purple">I'am</span>
+            Hello <span className="purple">I'm</span>
           </p>
           <h1 className="purple text-5xl my-5">Linh Nguyen Le</h1>
           <p className="mt-5 font-medium text-lg">
             5<sup>th</sup> semester student @ Seneca College
           </p>
-          {/* <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-            iusto. Adipisci in qui officia provident tenetur sequi, deserunt
-            corporis  quos?
-          </p> */}
           <button
             className={classes["text-button"]}
             onClick={(e) => {
