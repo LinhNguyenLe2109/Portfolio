@@ -2,6 +2,7 @@ import React from "react";
 // delete these later
 import { MdDesignServices } from "react-icons/md";
 import { HiDesktopComputer } from "react-icons/hi";
+import {FiCodesandbox} from "react-icons/fi";
 import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
@@ -22,15 +23,30 @@ const Experiences = () => {
       <Cards>
         <Slide triggerOnce="true" direction="left">
           <Card
+            Icon={FiCodesandbox}
+            title={"Co-op, Software Engineer"}
+            desc={[
+              `Participate in bi-weekly sprints and daily-standups.`,
+              `Create, update features, fix front-end and back-end errors related to user experience.`,
+              `Improve test coverage for the software.`,
+              `Increased load handling by 30%`
+            ]}
+            company="PAR Technology"
+            startTime="September 2023"
+            endTime="Current"
+          />
+        </Slide>
+        <Slide triggerOnce="true" direction="left">
+          <Card
             Icon={MdDesignServices}
             title={"IPC144 Lab Assistant"}
             desc={[
-              `Collaborate with professors to create a positive and productive learning environment`,
-              `Assist, guide, troubleshoot student code in C/C++ programming lab sessions.`,
+              `Collaborated with professors to create a positive and productive learning environment`,
+              `Assisted, guided, troubleshot student code in C/C++ programming lab sessions.`,
             ]}
-            company = "Seneca College"
-            startTime = "January 2023"
-            endTime = "Current"
+            company="Seneca College"
+            startTime="January 2023"
+            endTime="August 2023"
           />
         </Slide>
         <Slide triggerOnce="true" direction="left">
@@ -44,9 +60,8 @@ const Experiences = () => {
               `Collaborated with communication officers and the web team to enhance the web application's appearance and functionality to improve user experience.`,
             ]}
             company="TDSB (Toronto District School Board)"
-            startTime = "August 2022"
-            endTime = "December 2022"
-
+            startTime="August 2022"
+            endTime="December 2022"
           />
         </Slide>
       </Cards>
