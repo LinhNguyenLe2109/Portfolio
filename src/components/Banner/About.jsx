@@ -17,13 +17,21 @@ function About() {
           <span className="text-mainColor text-lg font-bold">
             Linh Nguyen Le
           </span>
-          , 5th semester student at Seneca College majoring in{" "}
+          , 3rd year student at Seneca College majoring in{" "}
           <span className="text-mainColor text-lg font-bold">
             Computer Programming & Analysis
           </span>
-          . I'm a dedicated and team-oriented student searching for a{" "}
+          . Currently I'm doing my co-op as a{" "}
           <span className="text-mainColor text-lg font-bold">
-            co-op opportunity
+            Software Engineer
+          </span>{" "}
+          for{" "}
+          <span className="text-mainColor text-lg font-bold">
+            PAR Technology
+          </span>
+          . I'm a dedicated and team-oriented student{" "}
+          <span className="text-mainColor text-lg font-bold">
+            searching for an opportunity
           </span>{" "}
           in software development. During my study, I've had the opportunity to
           work on various group projects where I collaborated with diverse teams
