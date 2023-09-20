@@ -17,7 +17,7 @@ const Projects = () => {
       <Project
         name="Lazyless"
         link="https://github.com/LinhNguyenLe2109/Lazyless"
-        techStack={["Next.js", "TailwindCSS", "MongoDB"]}
+        techStack={["Angular", "TailwindCSS", "MongoDB"]}
         imgLink="\images\inProgress.png"
         desc={[
           "Allow users to keep track of their daily activities and manage their time more effectively",
