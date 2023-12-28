@@ -8,7 +8,7 @@ const Card = (props) => {
   return (
     <Container
       onClick={() => setActive((active) => !active)}
-      className={`${classes.cardContainer} ${active ? "show" : ""} relative min-w-52`}
+      className={`${classes.cardContainer} ${active ? "show" : ""} relative`}
     >
       <span className="purple text-8xl">
         <Icon className="mx-auto" />

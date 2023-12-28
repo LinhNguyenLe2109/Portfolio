@@ -6,7 +6,8 @@ import { FiCodesandbox } from "react-icons/fi";
 import { FaLaptopHouse } from "react-icons/fa";
 import styled from "styled-components";
 import Card from "./Card";
-import { Slide } from "react-awesome-reveal";
+import { Slide, JackInTheBox } from "react-awesome-reveal";
+import Slider from "./Slider";
 
 const Experiences = () => {
   return (
@@ -19,65 +20,9 @@ const Experiences = () => {
           My <span className="purple">Experiences</span>{" "}
         </h2>{" "}
       </Slide>
-      {/* todo */}
-      {/* <SliderComp /> */}
-      <Cards>
-        <Slide triggerOnce="true" direction="left">
-          <Card
-            Icon={FaLaptopHouse}
-            title={"Developer"}
-            desc={[
-              `Build and develop the foundation for a registration system`,
-            ]}
-            company="Seneca Housing Hackathon Committee"
-            startTime="December 2023"
-            endTime="Current"
-          />
-        </Slide>
-        <Slide triggerOnce="true" direction="left">
-          <Card
-            Icon={MdDesignServices}
-            title={"IPC144 Lab Assistant"}
-            desc={[
-              `Collaborated with professors to create a positive and productive learning environment`,
-              `Assisted, guided, troubleshot student code in C/C++ programming lab sessions.`,
-            ]}
-            company="Seneca College"
-            startTime="January 2023"
-            endTime="Current"
-          />
-        </Slide>
-        <Slide triggerOnce="true" direction="left">
-          <Card
-            Icon={FiCodesandbox}
-            title={"Co-op, Software Engineer"}
-            desc={[
-              `Participated in bi-weekly sprints and daily-standups.`,
-              `Created, updated features, fixed front-end and back-end errors related to user experience.`,
-              `Improved test coverage for the software.`,
-              `Increased load handling by 30%`,
-            ]}
-            company="PAR Canada ULC"
-            startTime="September 2023"
-            endTime="December 2023"
-          />
-        </Slide>
-        <Slide triggerOnce="true" direction="left">
-          <Card
-            Icon={HiDesktopComputer}
-            title={"Web developer"}
-            desc={[
-              `Enhanced an existing module in the current CMS by providing additional functionalities, resulting in increased efficiency.`,
-              `Successfully deployed and maintained two front-end projects, resulting in improved user engagement and website performance.`,
-              `Developed and maintained internal and external websites with AODA compliance.`,
-              `Collaborated with communication officers and the web team to enhance the web application's appearance and functionality to improve user experience.`,
-            ]}
-            company="TDSB (Toronto District School Board)"
-            startTime="August 2022"
-            endTime="December 2022"
-          />
-        </Slide>
-      </Cards>
+      <JackInTheBox triggerOnce="true">
+        <Slider />
+      </JackInTheBox>
     </Container>
   );
 };

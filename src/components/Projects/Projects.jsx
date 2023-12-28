@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Zoom } from "react-awesome-reveal";
-
-import SliderComp from "./Slider";
 import Project from "./Project";
 
 const Projects = () => {
