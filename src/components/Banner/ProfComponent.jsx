@@ -13,12 +13,12 @@ const ProfComponent = () => {
           <p className="mt-5 font-medium text-xl ">
             Hello <span className="purple">I'm</span>
           </p>
-          <h1 className="purple text-5xl my-5">Linh Nguyen Le</h1>
+          <h1 className="purple text-5xl my-5">Linh Nguyen "Nathan" Le</h1>
           <p className="mt-5 font-medium text-lg">
             3<sup>rd</sup> year student @ Seneca College
           </p>
           <p className="font-medium text-lg">
-            Co-op, Software Engineer @ PAR Technology
+            Developer @ Seneca Hackathon Committee
           </p>
           <button
             className={classes["text-button"]}
@@ -64,7 +64,7 @@ const ProfComponent = () => {
         <div>
           <img
             className={classes["profile-img"]}
-            src="/images/intro-img.jpg"
+            src="/images/personalPicture.jpeg"
             alt="profile"
           />
         </div>

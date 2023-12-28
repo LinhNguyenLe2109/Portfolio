@@ -71,7 +71,7 @@ const Container = styled.div`
   .bars {
     display: none;
   }
-  @media (max-width: 640px) {
+  @media (max-width: 900px) {
     .bars {
       width: 40px;
       height: 40px;
@@ -113,7 +113,7 @@ const Container = styled.div`
 `;
 
 const Nav = styled.div`
-  @media (max-width: 640px) {
+  @media (max-width: 900px) {
     position: fixed;
     display: flex;
     flex-direction: column;
