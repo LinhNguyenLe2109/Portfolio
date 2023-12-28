@@ -14,7 +14,7 @@ const Projects = () => {
       </Zoom>
       <Project
         name="Lazyless"
-        link="https://github.com/LinhNguyenLe2109/Lazyless"
+        link="https://lazyless.vercel.app/"
         techStack={["Angular", "Express.js", "Angular Material", "TailwindCSS", "MongoDB"]}
         imgLink="\images\lazylessMockUp.png"
         desc={[
