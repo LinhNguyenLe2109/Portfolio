@@ -17,13 +17,13 @@ const Projects = () => {
       <Project
         name="Lazyless"
         link="https://github.com/LinhNguyenLe2109/Lazyless"
-        techStack={["Angular", "TailwindCSS", "MongoDB"]}
-        imgLink="\images\inProgress.png"
+        techStack={["Angular", "Express.js", "Angular Material", "TailwindCSS", "MongoDB"]}
+        imgLink="\images\lazylessMockUp.png"
         desc={[
           "Allow users to keep track of their daily activities and manage their time more effectively",
-          "Enabled users to log in/log out or simply enter their app id to access their personal dashboard",
+          "Enabled users to log in/log out",
           "Users can add, edit, delete their tasks and view their progress",
-          "User data is stored in MongoDB Atlas, hashed and salted for security purposes"
+          "User data is stored in MongoDB Atlas"
         ]}
       />
       <Project
