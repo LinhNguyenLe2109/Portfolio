@@ -87,32 +87,6 @@ const Footer = () => {
           </div>
         </Fade>
       </Profile>
-      {/* todo */}
-      {/* <Form>
-        <Slide direction="right" triggerOnce="true">
-          <form>
-            <div className="name">
-              <span>
-                <CgProfile />
-              </span>
-              <input type="text" placeholder="Fullname..." />
-            </div>
-            <div className="email">
-              <span>
-                <MdAlternateEmail />
-              </span>
-              <input type="email" placeholder="Email..." />
-            </div>
-            <div className="message">
-              <span className="messageIcon">
-                <FiMail />
-              </span>
-              <textarea cols="30" rows="10" placeholder="Message..."></textarea>
-            </div>
-            <button className={`${classes.formSubmitButton} text-md`}>Submit</button>
-          </form>
-        </Slide>
-      </Form> */}
     </Container>
   );
 };
@@ -186,42 +160,6 @@ const Profile = styled.div`
       .test {
         margin-top: 0.2rem;
         color: #fff;
-      }
-    }
-  }
-`;
-const Form = styled.div`
-  flex: 1;
-
-  form {
-    background-color: #191923;
-    padding: 0.8rem;
-    border-radius: 5px;
-    .name,
-    .email,
-    .message {
-      display: flex;
-      border: 1px solid gray;
-      margin-bottom: 0.5rem;
-      input,
-      textarea {
-        width: 100%;
-        border: none;
-        outline: none;
-        color: #fff;
-        background-color: transparent;
-        padding: 1rem 0.5rem;
-      }
-      span {
-        background-color: #3e3e3e;
-        width: 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .messageIcon {
-        align-items: flex-start;
-        padding-top: 0.5rem;
       }
     }
   }
