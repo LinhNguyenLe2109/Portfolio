@@ -10,6 +10,12 @@ function Activities() {
         <span className="text-mainColor">Achievements</span>
       </h2>
       <ActivityCard
+        month="December"
+        year="2023"
+        desc="I got my Azure Fundamentals certification. I learned about the basic concepts of cloud computing, the different types of cloud services, and the core Azure services. I'm sure that this certification will help me more comfortable working with the cloud."
+        imgLink="\images\AZ900.png"
+      />
+      <ActivityCard
         month="October"
         year="2023"
         desc="After a month at PAR Technology, I receive a public praise from my manager for my desire to go above and beyond. Ever since I started here, I have already determined to contribute as much as I can to the company. With my manager's encouragement to provide feedbacks and innovation ideas to our application, I give my team various ideas from adding integration test, new UI design for user experience to streamline our front-end design with the use of Tailwind CSS. I am glad that my manager recognized my effort and I will continue to do my best to help the company grow."

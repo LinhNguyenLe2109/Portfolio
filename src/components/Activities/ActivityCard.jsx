@@ -3,12 +3,8 @@ import React from "react";
 function ActivityCard(props) {
   return (
     <div className="mb-28">
-      <div className="flex mb-14">
-        <h3 className="text-4xl text-mainColor">{props.month}, {props.year}</h3>
-        <div
-          aria-hidden="true"
-          className="flex-grow border-b-2 border-s-2 ms-2"
-        ></div>
+      <div className="flex mb-8">
+        <h3 className="text-3xl text-mainColor">{props.month}, {props.year}</h3>
       </div>
       <div className="flex justify-around items-center lg:items-start flex-col lg:flex-row">
         {props.desc && (
