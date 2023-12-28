@@ -2,7 +2,8 @@ import React from "react";
 // delete these later
 import { MdDesignServices } from "react-icons/md";
 import { HiDesktopComputer } from "react-icons/hi";
-import {FiCodesandbox} from "react-icons/fi";
+import { FiCodesandbox } from "react-icons/fi";
+import { FaLaptopHouse } from "react-icons/fa";
 import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
@@ -23,16 +24,13 @@ const Experiences = () => {
       <Cards>
         <Slide triggerOnce="true" direction="left">
           <Card
-            Icon={FiCodesandbox}
-            title={"Co-op, Software Engineer"}
+            Icon={FaLaptopHouse}
+            title={"Developer"}
             desc={[
-              `Participate in bi-weekly sprints and daily-standups.`,
-              `Create, update features, fix front-end and back-end errors related to user experience.`,
-              `Improve test coverage for the software.`,
-              `Increased load handling by 30%`
+              `Build and develop the foundation for a registration system`,
             ]}
-            company="PAR Technology"
-            startTime="September 2023"
+            company="Seneca Housing Hackathon Committee"
+            startTime="December 2023"
             endTime="Current"
           />
         </Slide>
@@ -46,7 +44,22 @@ const Experiences = () => {
             ]}
             company="Seneca College"
             startTime="January 2023"
-            endTime="August 2023"
+            endTime="Current"
+          />
+        </Slide>
+        <Slide triggerOnce="true" direction="left">
+          <Card
+            Icon={FiCodesandbox}
+            title={"Co-op, Software Engineer"}
+            desc={[
+              `Participated in bi-weekly sprints and daily-standups.`,
+              `Created, updated features, fixed front-end and back-end errors related to user experience.`,
+              `Improved test coverage for the software.`,
+              `Increased load handling by 30%`,
+            ]}
+            company="PAR Canada ULC"
+            startTime="September 2023"
+            endTime="December 2023"
           />
         </Slide>
         <Slide triggerOnce="true" direction="left">
@@ -90,4 +103,5 @@ const Cards = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin-top: 4rem;
   gap: 1rem;
+  flex-wrap: wrap;
 `;
