@@ -8,19 +8,23 @@ const Card = (props) => {
   return (
     <Container
       onClick={() => setActive((active) => !active)}
-      className={`${classes.cardContainer} ${active ? "show" : ""} relative`}
+      className={`${classes.cardContainer} ${
+        active ? "show" : ""
+      } relative !px-10 flex sm:justify-around items-center sm:flex-row flex-col`}
     >
-      <span className="purple text-8xl">
-        <Icon className="mx-auto" />
-      </span>
-
-      <div className="text-center">
-        <h3 className="text-xl">{title}</h3>
-        <p className="text-sm">
-          {startTime} - {endTime}
-        </p>
-        <p className="text-mainColor mb-3 text-lg">{company}</p>
+      <div>
+        <span className="purple text-8xl">
+          <Icon className="mx-auto" />
+        </span>
+        <div className="text-center">
+          <h3 className="text-xl">{title}</h3>
+          <p className="text-sm">
+            {startTime} - {endTime}
+          </p>
+          <p className="text-mainColor mb-3 text-lg">{company}</p>
+        </div>
       </div>
+
       <div className={classes.cardDesc}>
         {desc && (
           <ul className="list-disc list-inside">

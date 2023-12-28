@@ -39,6 +39,7 @@ export default function Slider() {
             title={"Developer"}
             desc={[
               `Build and develop the foundation for a registration system`,
+              `Promote ideas and solutions to improve the system's performance and efficiency`,
             ]}
             company="Seneca Housing Hackathon Committee"
             startTime="December 2023"
@@ -63,10 +64,12 @@ export default function Slider() {
             Icon={FiCodesandbox}
             title={"Co-op, Software Engineer"}
             desc={[
-              `Participated in bi-weekly sprints and daily-standups.`,
-              `Created, updated features, fixed front-end and back-end errors related to user experience.`,
-              `Improved test coverage for the software.`,
-              `Increased load handling by 30%`,
+              `Worked in an Agile environment, maintained and implemented new features for a SaaS product.`,
+              `Collaborated with senior engineers to demonstrate new features, quality-of-life improvements.`,
+              `Streamlined front-end development and minimized CSS codebase by 80% by introducing Tailwind.`,
+              `Reduced compile time for development environment by 50%.`,
+              `Managed, updated RESTful and SOAP APIs, built an API that can be used for multiple datapoints.`,
+              `Created a solution for testing library compatibility issues for the back-end server.`,
             ]}
             company="PAR Canada ULC"
             startTime="September 2023"
