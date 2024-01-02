@@ -38,8 +38,8 @@ export default function Slider() {
             Icon={FaLaptopHouse}
             title={"Developer"}
             desc={[
-              `Build and develop the foundation for a registration system`,
-              `Promote ideas and solutions to improve the system's performance and efficiency`,
+              `Construct the front-end foundation for the Hackathon registration system`,
+              `Developed CRUD APIs, establishing connectivity between the system and a Firebase database.`,
             ]}
             company="Seneca Housing Hackathon Committee"
             startTime="December 2023"
@@ -64,12 +64,11 @@ export default function Slider() {
             Icon={FiCodesandbox}
             title={"Co-op, Software Engineer"}
             desc={[
-              `Worked in an Agile environment, maintained and implemented new features for a SaaS product.`,
+              `Worked in an Agile environment, maintained a SaaS product that tracks live data, produces reports`,
               `Collaborated with senior engineers to demonstrate new features, quality-of-life improvements.`,
-              `Streamlined front-end development and minimized CSS codebase by 80% by introducing Tailwind.`,
-              `Reduced compile time for development environment by 50%.`,
-              `Managed, updated RESTful and SOAP APIs, built an API that can be used for multiple datapoints.`,
-              `Created a solution for testing library compatibility issues for the back-end server.`,
+              `Introduced Tailwind, streamlined front-end development and minimized CSS codebase by 80%.`,
+              `Updated Webpack configuration file, reduced compile time for development environment by 50%.`,
+              `Built an API that can be used for multiple datapoints.`,
             ]}
             company="PAR Canada ULC"
             startTime="September 2023"
@@ -81,10 +80,9 @@ export default function Slider() {
             Icon={HiDesktopComputer}
             title={"Web developer"}
             desc={[
-              `Enhanced an existing module in the current CMS by providing additional functionalities, resulting in increased efficiency.`,
-              `Successfully deployed and maintained two front-end projects, resulting in improved user engagement and website performance.`,
               `Developed and maintained internal and external websites with AODA compliance.`,
-              `Collaborated with communication officers and the web team to enhance the web application's appearance and functionality to improve user experience.`,
+              `Enhanced a website module, enabling users to efficiently search a comprehensive list of schools.`,
+              `Provided assistance to seniors in developing Alternative School and CEBSA sections.`,
             ]}
             company="TDSB (Toronto District School Board)"
             startTime="August 2022"

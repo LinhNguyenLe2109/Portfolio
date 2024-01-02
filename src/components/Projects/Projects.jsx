@@ -30,7 +30,7 @@ const Projects = () => {
         techStack={["Next.js", "Bootstrap", "Jotai", "React-Bootstrap"]}
         imgLink="\images\restaurantMockUp.png"
         desc={[
-          "Enabled users to browse a list of dishes based on cuisine type and place an order",
+          "Allow users to add dishes to their order, streamlining the ordering process.",
           "Fetched reliable food data from Spoonacular API",
           "Utilized concepts like useState, useEffect, useAtom, useRouter, useSWR, etc",
           "Made compatible with multiple screen sizes, providing a user-friendly experience across all devices.",
