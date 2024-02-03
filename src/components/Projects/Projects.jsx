@@ -57,5 +57,3 @@ const Container = styled.div`
     font-size: 1.9rem;
   }
 `;
-
-const Slide = styled.div``;

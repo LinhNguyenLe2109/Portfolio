@@ -10,7 +10,7 @@ module.exports = {
         dropShadow2:" #a700c9",
       },
       boxShadow:{
-        "base-shadow": "var(--drop-shadow-1) 0px 5px 15px"
+        "base-shadow": "var(--drop-shadow-1) 0px 5px 15px",
       }
     },
   },

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import classes from "../../styles/Experience/Experiences.module.css";
 
 const Card = (props) => {
   const { Icon, desc, title, company, startTime, endTime } = props;
@@ -8,7 +7,7 @@ const Card = (props) => {
   return (
     <Container
       onClick={() => setActive((active) => !active)}
-      className={`${classes.cardContainer} ${
+      className={` ${
         active ? "show" : ""
       } relative !px-10 flex sm:justify-around items-center sm:flex-row flex-col`}
     >
@@ -25,7 +24,7 @@ const Card = (props) => {
         </div>
       </div>
 
-      <div className={classes.cardDesc}>
+      <div>
         {desc && (
           <ul className="list-disc list-inside">
             {desc.map((point, idx) => (
