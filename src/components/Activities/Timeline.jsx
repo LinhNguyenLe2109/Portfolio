@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Fade, Slide, Zoom } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 const ReadMore = ({ children }) => {
   const text = children;

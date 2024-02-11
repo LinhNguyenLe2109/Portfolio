@@ -44,7 +44,3 @@ const Banner = styled.div`
 const LightColor = styled.div`
   background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
 `;
-
-const DarkColor = styled.div`
-  background: #191923;
-`;
