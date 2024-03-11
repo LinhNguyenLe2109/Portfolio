@@ -4,6 +4,20 @@ import Timeline from "./Timeline";
 function Activities() {
   const activities = [
     {
+      title: "February 2024",
+      cardTitle: "Certified Associate in Project Management (CAPM)®",
+      url: "https://www.credly.com/badges/d94b1aff-5c15-4067-8dae-b9c336d9d0ea/public_url",
+      cardDetailedText:
+        "I pursued this certificate as I wanted to understand the principles of project management, and my role as a part of a bigger team in order to contribute and be as productive as possible. I learned about the project management frameworks (especially Agile frameworks), the five process groups, and the ten knowledge areas. I also learned about the project management processes and the role of a project manager.",
+      media: {
+        type: "IMAGE",
+        source: {
+          url: "\\images\\CAPM_certification.png",
+          name: "Azure Fundamentals certification",
+        },
+      },
+    },
+    {
       title: "December 2023",
       cardTitle: "Azure Fundamentals certification",
       url: "https://learn.microsoft.com/en-us/users/linhnguyenle-5932/credentials/b06d078c657eb5f6",
