@@ -15,10 +15,7 @@ const ProfComponent = () => {
           </p>
           <h1 className="purple text-5xl my-5">Linh Nguyen "Nathan" Le</h1>
           <p className="mt-5 font-medium text-lg">
-            3<sup>rd</sup> year student @ Seneca College
-          </p>
-          <p className="font-medium text-lg">
-            Developer @ Seneca Hackathon Committee
+            Computer Science Graduate
           </p>
           <button
             className={classes["text-button"]}

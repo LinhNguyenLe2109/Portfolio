@@ -15,18 +15,16 @@ function About() {
         <div className="ms-3 leading-relaxed [&>p]:mt-3">
           <p>
             Hello, I'm{" "}
-            <span className="text-mainColor text-lg font-bold">Nathan</span>,
-            3rd year student at Seneca College majoring in{" "}
+            <span className="text-mainColor text-lg font-bold">Nathan</span>, a
+            recent graduate at Seneca College majoring in{" "}
             <span className="text-mainColor text-lg font-bold">
               Computer Programming & Analysis
             </span>
-            . Currently, I'm a Lab Assistant and a Developer at Seneca College.
+            .
           </p>
           <p>
-            Graduating in{" "}
-            <span className="text-mainColor text-lg font-bold">April 2024</span>
-            , I'm seeking a long-term opportunity to apply my skills. With two
-            co-ops at{" "}
+            Currently, I'm seeking a long-term opportunity to apply my skills.
+            With two co-ops at{" "}
             <span className="text-mainColor text-lg font-bold">TDSB</span> and{" "}
             <span className="text-mainColor text-lg font-bold">PAR Canada</span>
             , I've gained a strong foundation in software engineering. These
@@ -41,8 +39,8 @@ function About() {
               video games
             </span>
             , listening to{" "}
-            <span className="text-mainColor text-lg font-bold">podcasts</span>
-            watch{" "}
+            <span className="text-mainColor text-lg font-bold">podcasts</span>,
+            and watch{" "}
             <span className="text-mainColor text-lg font-bold">
               documentaries
             </span>{" "}

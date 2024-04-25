@@ -14,9 +14,9 @@ const Projects = () => {
       </Zoom>
       <Project
         name="Shift Management System"
-        link="https://github.com/leoschwartz/ShiftManagementTool"
+        link="https://shift-management-tool.vercel.app/"
         techStack={["React", "Express.js", "Firebase", "TailwindCSS"]}
-        imgLink="\images\onGoingProject.png"
+        imgLink="\images\shiftManagementMockUp.png"
         desc={[
           "Perform user authentication and authorization using Firebase",
           "Each account has a different role and permission to access different features",

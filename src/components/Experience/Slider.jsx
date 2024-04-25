@@ -43,20 +43,7 @@ export default function Slider() {
             ]}
             company="Seneca Housing Hackathon Committee"
             startTime="December 2023"
-            endTime="Current"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card
-            Icon={MdDesignServices}
-            title={"IPC144 Lab Assistant"}
-            desc={[
-              `Collaborated with professors to create a positive and productive learning environment`,
-              `Assisted, guided, troubleshot student code in C/C++ programming lab sessions.`,
-            ]}
-            company="Seneca College"
-            startTime="January 2023"
-            endTime="Current"
+            endTime="March 2024"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -75,6 +62,20 @@ export default function Slider() {
             endTime="December 2023"
           />
         </SwiperSlide>
+        <SwiperSlide>
+          <Card
+            Icon={MdDesignServices}
+            title={"IPC144 Lab Assistant"}
+            desc={[
+              `Collaborated with professors to create a positive and productive learning environment`,
+              `Assisted, guided, troubleshot student code in C/C++ programming lab sessions.`,
+            ]}
+            company="Seneca College"
+            startTime="January 2023"
+            endTime="August 2023"
+          />
+        </SwiperSlide>
+
         <SwiperSlide>
           <Card
             Icon={HiDesktopComputer}
