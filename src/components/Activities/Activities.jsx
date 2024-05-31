@@ -61,7 +61,7 @@ function Activities() {
     },
     {
       title: "May 2023",
-      cardTitle: "Seneca College Smart Cities Hackathon Participation",
+      cardTitle: "Seneca College Smart Cities Hackathon Finalist",
       cardSubtitle:
         "I and my team managed to get into the Final round of the Hackathon",
       cardDetailedText:
